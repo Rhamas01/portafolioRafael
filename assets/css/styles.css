@@ -655,3 +655,7 @@ img{
  
 
 }
+
+.accessory__img:hover {
+  margin-top:-30px;
+} 
