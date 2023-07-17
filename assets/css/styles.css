@@ -659,3 +659,7 @@ img{
 .accessory__img:hover {
   margin-top:-30px;
 } 
+
+.boton{
+  max-width:250px;
+}
