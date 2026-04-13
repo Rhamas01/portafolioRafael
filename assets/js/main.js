@@ -104,6 +104,31 @@ sr.reveal(`.home__data, .home__img,
     interval: 200,
 })
 
+const images = document.querySelectorAll('.accessory__img');
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImg');
+const closeModal = document.getElementById('closeModal');
+
+// ABRIR
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    modal.classList.add('active');
+    modalImg.src = img.src;
+  });
+});
+
+// CERRAR CON X
+closeModal.addEventListener('click', () => {
+  modal.classList.remove('active');
+});
+
+// CERRAR AL HACER CLICK FUERA
+modal.addEventListener('click', (e) => {
+  if(e.target !== modalImg){
+    modal.classList.remove('active');
+  }
+});
+
 sr.reveal(`.share__img, .send__content`, {
     origin: 'left'
 })
