@@ -305,6 +305,7 @@ img{
 
 .button:hover{
   background-color: linear-gradient(90deg, rgb(4, 116, 153) ,  rgb(35, 11, 122) 100%);
+  margin-botom: 5px;
 }
 
 .button-link{
